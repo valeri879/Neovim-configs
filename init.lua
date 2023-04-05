@@ -17,3 +17,4 @@ require('core.plugin_config.lsp')
 --
 vim.o.termguicolors = true
 vim.cmd[[set number]]
+vim.opt.clipboard = 'unnamedplus'
