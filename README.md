@@ -32,7 +32,7 @@ manager.
     
 -   Clone this repository into your Neovim configuration directory:
     
--   `git clone https://github.com/valeri879/Neovim-config.git ~/.config/nvim` 
+-   `git clone git@github.com:valeri879/Neovim-configs.git ~/.config/nvim` 
     
 -   Launch Neovim and run the following command to install the plugins:
     
