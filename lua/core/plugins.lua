@@ -18,7 +18,13 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
   use 'folke/tokyonight.nvim'
   use 'nvim-lualine/lualine.nvim'
-  use 'nvim-treesitter/nvim-treesitter'
+  use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+          local ts_update = require('nvim-treesitter.install').upadate({ with_sync = true })
+        end,
+      
+      }
   use 'NvChad/nvim-colorizer.lua'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
